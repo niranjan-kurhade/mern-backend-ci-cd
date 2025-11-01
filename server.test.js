@@ -8,3 +8,7 @@ describe('GET /', () => {
     expect(res.body.message).toBe('Hello from MERN CI/CD Backend!');
   });
 });
+
+afterAll(() => {
+  process.exit(0);
+});
